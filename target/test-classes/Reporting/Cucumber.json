@@ -1,0 +1,173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "verify whether user is able to book Hotel rooms successfully or not",
+        "description": "",
+        "id": "verify--hotel-bookong-in-adactin-hotel-app;verify-whether-user-is-able-to-book-hotel-rooms-successfully-or-not",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11931176100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User has already registered",
+            "match": {
+              "location": "LoginPageStep.user_has_already_registered()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3329760700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters details",
+            "match": {
+              "location": "LoginPageStep.user_enters_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "Monkey123",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3453874400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "login should be successfull",
+            "match": {
+              "location": "LoginPageStep.login_should_be_successfull()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4160424100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User selects options for Hotel search",
+            "match": {
+              "location": "LoginPageStep.user_selects_options_for_Hotel_search(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Location",
+                  "Hotel",
+                  "RoomType",
+                  "NoOfRooms",
+                  "CheckInDate",
+                  "CheckOutDate",
+                  "Adults",
+                  "Children"
+                ]
+              },
+              {
+                "cells": [
+                  "London",
+                  "Hotel Hervey",
+                  "Double",
+                  "4",
+                  "01/01/2020",
+                  "08/03/2020",
+                  "2",
+                  "2"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3390986800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should select hotel and continue",
+            "match": {
+              "location": "LoginPageStep.user_should_select_hotel_and_continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9255408900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User fills details on confrim hotel",
+            "match": {
+              "location": "LoginPageStep.user_fills_details_on_confrim_hotel(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "address",
+                  "creditcardNo",
+                  "CardType",
+                  "ExpiryMon",
+                  "Expiryear",
+                  "CVV"
+                ]
+              },
+              {
+                "cells": [
+                  "Rags",
+                  "Raki",
+                  "Main Street",
+                  "1234567890876545",
+                  "VISA",
+                  "2",
+                  "2020",
+                  "675"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7068290400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should  Successfully book hotel",
+            "match": {
+              "location": "LoginPageStep.user_should_Successfully_book_hotel()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "verify  hotel bookong in Adactin Hotel App",
+    "description": "",
+    "id": "verify--hotel-bookong-in-adactin-hotel-app",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Login.feature",
+    "tags": []
+  }
+]
